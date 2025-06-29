@@ -1,1 +1,198 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Chow - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Kevin Chow</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <img src="images/kevin_chow.jpg" alt="Kevin Chow" class="profile-photo">
+                <h2>Hello, I'm Kevin Chow!</h2>
+                <p class="tagline">Grad Student @ UC Berkeley, MIDS | Data Scientist | Engineer | PM | Driving AI/ML & Data Initiatives</p>
+                <p>Passionate about solving tough, ambiguous problems with data science and machine learning. I'm eager to grow, collaborate, and bring out the best in myself and my team!</p>
+                <a href="#projects" class="btn">View My Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm an analytical problem solver with backgrounds in data science and engineering, bringing 4+ years of professional experience spanning complex systems, program management, 
+                    data strategy, and advanced analytics. From leading global strategy initiatives to developing machine learning models, I bring an engineer's mindset to every challenge — 
+                    breaking down complexity, building robust solutions, and delivering high-quality results by going the extra mile.</p>
+                <p>Currently pursuing my Master's in Information and Data Science at UC Berkeley, I've further developed and applied my data skills across projects involving both structured 
+                    and unstructured data, including predictive analytics, generative AI, natural language processing, classification, and object detection. Throughout these projects, I've 
+                    gained experience in the full lifecycle of data science work, from data wrangling to model evaluation and deployment, and I am adept at communicating findings and insights through compelling 
+                    data visualizations. My proficiency extends across a comprehensive range of techniques, encompassing both classical machine learning (such as feature engineering, regression, 
+                    SVM, gradient boosting, and hyperparameter tuning) and cutting-edge deep learning architectures.</p>
+                </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <h3>Tailored Knowledge Retrieval Using RAG and LLMs <br><small>Mar 2025 - Apr 2025</small></h3>
+                        <ul>
+                            <li>Built a <strong>Retrieval-Augmented Generation (RAG) system</strong> using <strong>LangChain</strong> and <strong>Mistral-7B</strong> to enhance Q&A capabilities 
+                                regarding Machine Learning and LLM topics.</li>
+                            <li>Implemented <strong>RAG evaluation metrics</strong> (P@K, semantic similarity, readability) and developed a weighted scoring system to support iterative RAG system improvement.</li>
+                            <li>Optimized <strong>semantic search of unstructured data</strong> and designed audience-specific pipelines by experimenting with embedding models, chunk sizes, text splitters,
+                                 retriever search types, re-rankers, LLMs, and prompt engineering, resulting in <strong>improved answer accuracy and reduced hallucinations.</strong></li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> Gen AI, NLP, LangChain, Mistral-7B, LLMs, Embedding Models, RAG, Prompt Engineering</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Predicting and Ranking Online Business Review Helpfulness <br><small>Sept 2024 - Dec 2024</small></h3>
+                        <ul>
+                            <li>Developed an <strong>ensemble machine learning model</strong> to predict and rank the helpfulness of Yelp business reviews, 
+                                leveraging <strong>advanced NLP techniques and feature engineering</strong> to improve accuracy.</li>
+                            <li>Engineered features including readability scores, review aspects, review nature, and business type; utilized <strong>transformer models</strong>
+                                 (<strong>BERT</strong> for contextual embeddings and <strong>BART-large-MNLI</strong> for classification) to enhance feature representation.</li>
+                            <li>Trained individual ML models <strong>(Random Forest, SVM, Tobit Regression)</strong> and combined their predictions into a final model achieving an <strong>NDCG score of 0.9595</strong>, 
+                                demonstrating strong ranking accuracy.</li>
+                            <li>Identified <strong>business type as a key factor</strong> in predicting review helpfulness, enabling more focused strategies for business optimization.</li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> NLP, Ensemble ML, Random Forest, SVM, Tobit Regression, BERT, BART-large-MNLI, Feature Engineering</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Mars Surface Terrain Classification <br><small>Sept 2024 - Dec 2024</small></h3>
+                        <ul>
+                            <li>Developed a <strong>classification pipeline</strong> for Mars surface terrain images, focusing on <strong>minimal reliance on advanced deep learning models</strong>.</li>
+                            <li>Improved accuracy for underrepresented terrain types through targeted <strong>data augmentation, preprocessing, and model selection</strong>.</li>
+                            <li>Engineered and evaluated <strong>feature extraction</strong> techniques including HOG, SIFT (with bag-of-visual-words), Canny edge detection, and ResNet-50 embeddings, 
+                                incorporating <strong>dimensionality reduction</strong> to boost performance and efficiency.</li>
+                            <li>Trained and tuned classifiers (<strong>Logistic Regression, Histogram-based Gradient Boosting, SVM</strong>), combining them via a majority voting ensemble 
+                                to achieve <strong>87% test accuracy, a 123% improvement</strong> over the baseline.</li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> Image Classification, HOG, SIFT, Bag-of-Visual-Words, Canny Edge Detection, ResNet-50, Dimensionality Reduction, Logistic Regression, Gradient Boosting, SVM, Ensemble Modeling, Data Augmentation</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Making Manga Accessible<br><small>June 2024 - Aug 2024</small></h3>
+                        <ul>
+                            <li>Trained a <strong>deep learning model</strong> to improve manga accessibility for visually impaired readers by detecting and classifying faces, body parts, text, and panels 
+                                across <strong>20,000+ annotated pages</strong>.</li>
+                            <li>Implemented the <strong>Hungarian algorithm</strong> to optimally match predicted and true bounding boxes, and a <strong>custom loss function</strong> 
+                                based on class, distance, and IoU metrics to enhance detection accuracy.</li>
+                            <li>Replaced a U-Net baseline with a tuned DETR transformer model, <strong>reducing loss by 66% and achieving a 24x improvement in mAP</strong>, significantly boosting model performance.</li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> Object Detection, Deep Learning, Hungarian Algorithm, Custom Loss Functions, IoU, U-Net, DETR, Transformers, mAP</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Medical Image Analysis with CNNs<br><small>July 2024 - Aug 2024</small></h3>
+                        <ul>
+                            <li>Trained a <strong>Convolutional Neural Network</strong> to classify diabetic retinopathy from fundus photography images.</li>
+                            <li>Implemented data preprocessing techniques, including <strong>random sampling</strong> and <strong>image augmentation</strong>, to improve model generalization and robustness.</li>
+                            <li>Evaluated the performance of different CNN architectures on training, validation, and test sets to 
+                                determine the <strong>impact of model complexity and data augmentation</strong> on classification accuracy.</li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> Image Classification, CNNs, Data Preprocessing, Image Augmentation</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>DeepScribe AI Design – Product Design <br><small>Feb 2019 - May 2019</small></h3>
+                        <ul>
+                            <li>Optimized AI product transcription accuracy, delivering specific hardware recommendations that <strong>improved clinical documentation reliability</strong>.</li>
+                            <li>Evaluated cost and time trade-offs of in-house hardware versus off-the-shelf solutions to inform strategic product development. </li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> Product Design, Hardware Design, Audio Optimization</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Identifying Common-law Trademarks<br><small>Feb 2018 - May 2018</small></h3>
+                        <ul>
+                            <li>Collected and processed unstructured news article data from search engine results using NewsAPI, alongside historical New York Times articles, 
+                                to <strong>build a comprehensive dataset</strong> for identifying potential trademark risks.</li>
+                            <li>Trained NLP models, implementing <strong>Convolutional Neural Networks and Random Forest</strong> classifiers to predict the legal risk of a trademark lawsuit.</li>
+                        </ul>
+                        <p class="tools"><strong>Skills & Tools:</strong> NLP, NewsAPI, CNN, Random Forest</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </section>
+        <section id="skills" class="skills-section">
+                    <div class="container">
+                        <h2>Skills</h2>
+
+                        <div class="skill-category">
+                            <h3>Programming & Tools</h3>
+                            <ul>
+                                <li><strong>Languages:</strong> Python, SQL</li>
+                                <li><strong>ML Frameworks:</strong> TensorFlow, PyTorch, scikit-learn, Hugging Face, LangChain</li>
+                                <li><strong>Data Processing:</strong> Pandas, NumPy, ETL, Data Ingestion/Preprocessing, Unstructured Data, Data Augmentation</li>
+                                <li><strong>Visualization & Reporting:</strong> Matplotlib, Seaborn, Power BI, Excel</li>
+                                <li><strong>Cloud & Other Tools:</strong> AWS, Streamlit, FastAPI, Git (GitHub)</li>
+                            </ul>
+                        </div>
+
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <ul>
+                        <li><strong>GenAI & NLP:</strong> LLMs, RAG, Transformers (BERT, BART), Text Embeddings, NLTK, Bag of Words</li>
+                        <li><strong>Computer Vision:</strong> OpenCV, CNNs (ResNet, U-Net), Transformers (DETR), Image Processing (HOG, SIFT, Canny Edge), Bag of Visual Words</li>
+                        <li><strong>Algorithms:</strong> Regression (Linear, Logistic, Tobit), Random Forest, SVM, Gradient Boosting, Neural Networks (CNNs, RNNs), Clustering (K-Means), Ensemble Models, Hungarian Algorithm</li>
+                        <li><strong>Techniques:</strong> Experimental Design, Feature Engineering, Dimensionality Reduction, Model Selection, Hyperparameter Tuning, Custom Loss Functions, Optimization, Metric Development & Selection, Prompt Engineering, RAG Evaluation, Semantic Search Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Domain Expertise</h3>
+                    <ul>
+                        <li><strong>Business Operations:</strong> Resource & Demand Forecasting, Operation Analytics, Process Optimization, Change Control Management</li>
+                        <li><strong>Product Lifecycle:</strong> New Technology Development, Product Development & Quality Management, Program Management & Data Strategy</li>
+                        <li><strong>Automotive Industry:</strong> Autonomous Vehicles (AV), Electric Vehicles (EV), Infotainment & Connectivity Systems, Powertrain & Electrification</li>
+                        <li><strong>Vehicle Data:</strong> Telematics, Sensor Data, Manufacturing & Quality Data, Warranty Data Analysis</li>
+                        <li><strong>Cross-Industry Applications:</strong> Medical Imaging Analysis, Legal Technology & IP Analysis, Consumer Intelligence</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out and connect!</p>
+                <ul>
+                    <li>Cell Phone: <a href="tel:+19083378242">908-337-8242</a></li>               
+                    <li>Email: <a href="mailto:kchow2020@berkeley.edu">kchow2020@berkeley.edu</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/k-chow/" target="_blank">linkedin.com/in/k-chow</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kevin Chow. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
