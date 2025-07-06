@@ -138,10 +138,32 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    position: relative;
+}
+/* NEW: Style for the clickable overlay link */
+.card-overlay-link {
+    display: block; /* Makes the link take up block space */
+    position: absolute; /* Positions it relative to .project-card */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensures it sits above the card's background */
+    text-decoration: none; /* Removes default underline */
+    /* No padding or box-sizing here; the .project-card handles spacing */
 }
 
 .project-card:hover {
     transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Ensure content inside the link maintains its specific styling and is visible above the link overlay */
+.project-card a h3 {
+    color: #2a7a51; /* Keep title green (override the inherit from 'a') */
+}
+
+.project-card a p.tools {
+    color: #666; /* Ensure tools text is default gray */
 }
 
 .project-card h3 {
@@ -150,10 +172,10 @@ section h2 {
     text-align: center;
 }
 
-.project-card h3 a {
+/* .project-card h3 a {
     text-decoration: none;
-    color: #2a7a51; /* Match hero background color */
-}
+    color: #2a7a51; 
+} */
 
 .project-card h3 a:hover {
     text-decoration: underline;
@@ -175,6 +197,7 @@ section h2 {
     margin-left: 20px; /* Indents the bullets */
     margin-bottom: 10px; /* Adds space below the bullet list */
     padding-left: 0; /* Remove default padding, margin-left handles indent */
+    color: #333; /* Ensure bullet point text is default dark gray */
 }
 
 .project-card ul li {
